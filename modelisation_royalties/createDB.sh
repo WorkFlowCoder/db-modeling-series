@@ -10,4 +10,7 @@ fi
 sqlite3 "$DB_NAME" < schema.sql
 
 # Ajouter les données
-# sqlite3 "$DB_NAME" < data.sql
+sqlite3 "$DB_NAME" < data.sql
+
+# Visualisation de la base de données
+sqlitebrowser "$DB_NAME"
